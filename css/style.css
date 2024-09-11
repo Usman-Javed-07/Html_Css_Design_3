@@ -4,6 +4,7 @@
     text-decoration: none;
     list-style: none;
     box-sizing: border-box;
+    margin: 0;
 }
 
 /* body */
@@ -13,8 +14,6 @@ body {
 }
 
 /* navbar */
-
-
 .nav-logo img {
     width: 280px;
     height: 110px;
@@ -22,7 +21,7 @@ body {
 }
 .nav {
     width: 100%;
-    height: 110px;
+    height: 90px;
 }
 .nav ul {
     float: right;
@@ -30,7 +29,7 @@ body {
 }
 .nav ul li {
     display: inline-block;
-    line-height: 70px;
+    line-height: 50px;
     margin: 0 20px;
 }
 ul li a{
@@ -39,10 +38,9 @@ ul li a{
     font-size: 1.2rem;
 }
 .checkbtn {
-    font-size: 2rem;
     float: right;
-    line-height: 110px;
-    margin-right: 40px;
+    line-height: 102px;
+    margin-right: 20px;
     cursor: pointer;
 }
 .nav ul li a:hover {
@@ -62,22 +60,12 @@ ul li a{
     opacity: 1;
 }
 
-
-@media screen and (max-width: 952px) {
-    label.logo {
-        font-size: 3rem;
-        padding-left: 5rem;
-    }
-    nav ul li a {
-        font-size: 1rem;
-    }
-}
-@media screen and (max-width: 858px){
+@media screen and (max-width: 768px){
    
     ul {
         position: fixed;
         width: 100%;
-        top: 80px;
+        top: 85px;
         text-align: center;
         transition: all 0.5s;
     }
@@ -85,9 +73,15 @@ ul li a{
         display: block;
     }
     .nav ul li a {
-        font-size: 1.7rem;
+        font-size: 1.1rem;
     }
 
+}
+@media screen and (max-width: 425px) {
+    .nav-logo img {
+        width: 60%;
+        height: 90px;
+    }
 }
 
 @media screen and (min-width:860px) {
@@ -97,9 +91,10 @@ ul li a{
     .nav__list {
         width: auto;
         display: flex;
-        font-size: 1.6rem;
+        font-size: 1.5rem;
         max-height: 100%;
         opacity: 1;
+        margin-top: 15px;
     }
     .nav__item{
         border: 0;
@@ -107,13 +102,129 @@ ul li a{
 }
 
 
+/* hero section */
+.background-image {
+    background: url(../images/1701_Franklin_DAY_PARLOR_SE_Furniture-1-BlueGradient.webp);
+    width: 100%;
+    height: 84vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    background-position: center;
+}
+.hero-container {
+    height: 84vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+.hero-heading {
+    color: #fff;
+    font-weight: 600;
+    text-transform: capitalize;
+    text-align: center;
+   font-size: 2rem;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+} 
+.btn {
+   background: #e0990c;
+   color: #fff;
+   border: none;
+   font-size: 1.1rem;
+   border-radius: 25px;
+   margin-top: 20px;
+   padding: 10px 15px;
+   display: block;
+  margin: 30px auto;
+  cursor: pointer;
+}
+.btn:hover {
+    background: #ffaa00;
+    transition: 0.7s;
+    transform: scale(1.2);
+}
+@media screen and (max-width: 430px) {
+    .hero-heading {
+        font-size: 0.8rem;
+        text-align: center;
+    }
+    .btn {
+        margin: 10px auto;
+        padding: 10px 15px;
+        font-size: 0.7rem;
+    }
+}
 
+/* our services */
+.our-services {
+    text-align: center;
+    margin-top: 70px;
+}
+.services-heading {
+    color: #2864af;
+    font-size: 2rem;
+    letter-spacing: 1.3px;
+}
+.services-paragraph {
+    margin-top: 20px;
+    font-size: 1rem;
+}
+.service-line {
+   margin-top: 50px;
+   
+}
+@media screen and (max-width:430px) {
+    .services-heading {
+        font-size: 1rem;
+    }
+    .services-paragraph {
+        font-size: 0.7rem;
+    }
+}
 
+/* services icon */
+.icon-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.icon-paragraph {
+    text-align: center;
+}
+.services-btn{
+    background: #2864af;
+    color: white;
+    border: none;
+    font-size: 1.1rem;
+    border-radius: 20px;
+    padding: 10px 17px;
+    margin: 40px auto;
+    cursor: pointer;
+}
+.services-btn:hover {
+        background: #023068;
+        transition: 0.7s;
+}
+.icon-btn {
+    display: flex;
+    justify-content: center;
+}
 
-
-
-
-
-
-
- 
+@media screen and (max-width : 768px) {
+    .icon-container img {
+        width: 200px;
+        height: 110px;
+    }
+}
+@media screen and (max-width : 430px) {
+    .icon-paragraph {
+        font-size: 0.7rem;
+    }
+    .services-btn {
+        font-size: 0.7rem;
+    }
+}
