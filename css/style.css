@@ -258,11 +258,30 @@ ul li a{
 .virtual-button {
     display: flex;
     justify-content: center;
-    margin-top: 50px;
+    margin-top: 30px;
 }
 .virtual-line {
     margin-bottom: 0px;
 }
 @media screen and (max-width: 430px) {
-    virtual-heading 
+    .virtual-heading  {
+        font-size: 1rem;
+    }
+    .virtual-paragraph {
+        font-size: 0.7rem;
+    }
+}
+
+/* photography section */
+
+.photograpy-section {
+    margin: 8%;
+}
+.photograpy-heading {
+    font-size: 1.7rem;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+.photograpy-paragraph{
+    margin-top: 30px;
 }
