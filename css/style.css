@@ -227,4 +227,42 @@ ul li a{
     .services-btn {
         font-size: 0.7rem;
     }
+
+    /* virtual section */
+}
+
+.virtual-section {
+    margin: 8%;
+}
+.virtual-heading {
+ font-size: 1.7rem;
+ letter-spacing: 1px;
+ font-weight: 600;
+}
+.virtual-paragraph {
+    margin-top: 30px;
+}
+.virtual-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    object-fit: cover;
+    overflow-clip-margin:content-box ;
+    overflow: clip;
+}
+.virtual-img {
+    margin-top: 30px;
+    max-width: 100% ;
+    
+}
+.virtual-button {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+.virtual-line {
+    margin-bottom: 0px;
+}
+@media screen and (max-width: 430px) {
+    virtual-heading 
 }
