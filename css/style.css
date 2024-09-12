@@ -247,7 +247,6 @@ ul li a{
     justify-content: center;
     align-items: center;
     object-fit: cover;
-    overflow-clip-margin:content-box ;
     overflow: clip;
 }
 .virtual-img {
@@ -388,7 +387,6 @@ img {
     justify-content: center;
     align-items: center;
     object-fit: cover;
-    overflow-clip-margin:content-box ;
     overflow: clip;
 }
 .floor-image {
