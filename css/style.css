@@ -356,7 +356,7 @@ img {
     .text {font-size: 11px}
   }
   @media screen and (min-width:430px) {
-    img {
+    .slide-image{
         height: 400px;
     }
   }
